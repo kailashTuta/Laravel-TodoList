@@ -21,6 +21,13 @@ label {
     color: #0FA3B1;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 3px 3px 15px #00000080, 3px 3px 15px #00000080;
+    padding: 10px;
+    font-size: 20px;
+}
+
 #addTask {
     box-shadow: 3px 3px 15px #00000080, 3px 3px 15px #00000080;
     font-family: 'Roboto', sans-serif;

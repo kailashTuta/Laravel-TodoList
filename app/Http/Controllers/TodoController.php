@@ -41,7 +41,11 @@ class TodoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(
+            [
+                'todo' => 'required'
+            ]
+        );
         $todo = $request->todo;
         $t = new Todo;
         $t->todo = $todo;

@@ -9,13 +9,22 @@
         <div>
             <form action="/todos" method="POST">
                 @csrf
+                @error('todo')
+                    <div class="alert-danger" id="alert">
+                        <p class="text-center">{{ $message }}</p>
+                    </div>
+                @enderror
                 <div class="input-group">
                     <input type="text" class="form-control" name="todo" placeholder="Add Your Task" autocomplete="off">
                     <div class="input-group-append">
                         <input type="submit" class="btn btn-primary" value="Add Task">
                     </div>
-
                 </div>
+                {{-- @if ($errors->first('todo'))
+                    <div class="mt-3 alert-warning">
+                        <p class="text-center">{{ $errors->first('todo') }}</p>
+                    </div>
+                @endif --}}
             </form>
         </div>
         <div class="mt-3 todoContainer">

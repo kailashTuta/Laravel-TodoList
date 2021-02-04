@@ -135,6 +135,12 @@ return [
             'rule-name' => 'custom-message',
         ],
     ],
+    'custom' => [
+        'todo' => [
+            'required' => 'Please Enter Your Task',
+        ],
+    ],
+
 
     /*
     |--------------------------------------------------------------------------
